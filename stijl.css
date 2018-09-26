@@ -1,0 +1,115 @@
+
+html{
+  background-color: white;
+}
+main{
+  box-shadow: 0 0 450px 50px goldenrod;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  width: 37vw;
+  height: 65vh;
+  margin-top: 15vh;
+  margin-bottom: auto;
+  grid-gap: 0.4px;
+  animation: twist 14s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  grid-gap: -2px;
+  animation-fill-mode: both;
+}
+
+div:nth-child(1){
+  background: powderblue;
+  animation: moveblue 8s;
+  animation-iteration-count: infinite;
+}
+div:nth-child(2){
+  background-color: darkorange;
+  animation: moveorange 8s;
+  animation-iteration-count: infinite;
+}
+div:nth-child(3){
+  background-color: mediumorchid;
+  animation: movepurple 8s;
+  animation-iteration-count: infinite;
+}
+div:nth-child(4){
+  background-color: darksalmon;
+  animation: movepink 8s;
+  animation-iteration-count: infinite;
+}
+@keyframes moveblue {
+  25%{
+    transform: translate(0,290px);
+  }
+  50%{
+    transform: translate(311px, 290px);
+  }
+  75%{
+    transform: translate(311px, 0);
+  }
+  100%{
+    transform:translate(0,0);
+  }
+}
+@keyframes movepurple {
+  25%{
+    transform: translate(311px,0);
+  }
+  50%{
+    transform: translate(311px, -290px);
+  }
+  75%{
+    transform: translate(0px, -290px);
+  }
+  100%{
+    transform:translate(0,0);
+  }
+}
+@keyframes movepink {
+  25%{
+    transform: translate(0,-290px);
+  }
+  50%{
+    transform: translate(-311px, -290px);
+  }
+  75%{
+    transform: translate(-311px, 0px);
+  }
+  100%{
+    transform:translate(0,0);
+  }
+}
+@keyframes twist {
+  0%{
+    transform: rotate(180deg)
+  }
+  25%{
+    transform: rotate(45deg);
+  }
+  50%{
+    transform: rotate(90deg);
+  }
+  75%{
+    transform: rotate(135deg);
+  }
+  100%{
+    transform: rotate(180deg);
+  }
+}
+@keyframes moveorange {
+  25%{
+    transform: translate(-311px,0);
+  }
+  50%{
+    transform: translate(-311px, 290px);
+  }
+  75%{
+    transform: translate(0, 290px);
+  }
+  100%{
+    transform:translate(0,0 ;
+  }
+}
